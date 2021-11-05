@@ -18,7 +18,7 @@ router
   .post(async (req, res, next) => {
     try {
       console.log(req.body);
-      const data = await Category.bulkCreate(req.body.category);
+      const data = await Category.create(req.body);
       res.send(data);
     } catch (error) {
       console.log(error);

@@ -7,7 +7,7 @@ import usersRouter from "./services/users/index.js";
 import cartRouter from "./services/cart/index.js";
 const app = express();
 
-const port = process.env.PORT || 5001;
+const port = process.env.PORT || 5006;
 
 app.use(cors());
 
